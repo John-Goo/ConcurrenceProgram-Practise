@@ -55,6 +55,7 @@ class Strategy {
 	public void f1() {
 		try {
 			// synchronized (this) {
+			// 锁代码块
 			lock.lock();
 			for (int i = 0; i < 3; i++) {
 				System.out.println("{ f1()}--->" + i);
